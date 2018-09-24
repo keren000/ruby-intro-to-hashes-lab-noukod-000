@@ -26,6 +26,11 @@ def monopoly_with_third_tier
 			{
 				:pieces => 4,
 				:rent_in_dollars => {
+					one_piece_owned: 25,  
+	        two_pieces_owned: 50, 
+	        three_pieces_owned: 100,  
+	        four_pieces_owned: 200
+				:rent_in_dollars => {
 					one_piece_owned: 25,
 					two_pieces_owned: 50,
 					three_pieces_owned: 100,
@@ -44,7 +49,8 @@ def monopoly_with_third_tier
 def monopoly_with_fourth_tier
 	#copy and past the monopoly hash you build in the previous method. We're going to add stuff to it here!
 	monopoly = { 
-	    :railroads => { 
+	    :railroads => 
+			{ 
 	      :pieces => 4,  
 	      :names =>{
 	        :reading_railroad => {
@@ -58,9 +64,5 @@ def monopoly_with_fourth_tier
 	          }, 
 	        :shortline => { 
 	          "mortgage_value" => "$800" }},  
-	      :rent_in_dollars => { 
-	      one_piece_owned: 25,  
-	      two_pieces_owned: 50, 
-	      three_pieces_owned: 100,  
-	      four_pieces_owned: 200}}} 
+	      }}} 
 end
